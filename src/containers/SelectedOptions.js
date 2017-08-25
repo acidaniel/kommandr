@@ -1,16 +1,10 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {Popover, OverlayTrigger} from 'react-bootstrap';
-import selectedOptionsSelector from '../selectors/selectedOptions';
-/*
-TODO: Use dumb components
-import Option from '../components/Option';
-import OptionSeparator from '../components/OptionSeparator';
-import Argument from '../components/Argument';
-*/
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import { Popover, OverlayTrigger } from 'react-bootstrap';
 import Space from '../components/Space';
 
-class SelectedOptions extends React.Component {
+class SelectedOptions extends Component {
 
   render() {
     const {options, program, commandLine} = this.props;
