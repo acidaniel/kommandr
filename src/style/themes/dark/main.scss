@@ -1,0 +1,14 @@
+.dark-theme {
+  color: $dark-theme-color;
+}
+
+.dark-theme {
+  header {
+    background-color: $dark-theme-header-bg;
+    border-bottom: 1px solid $dark-theme-header-border;
+  }
+
+  .content {
+    background-color: $dark-theme-content-bg;
+  }
+}

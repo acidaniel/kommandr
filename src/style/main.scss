@@ -1,22 +1,9 @@
-@import 'variables';
-
-html, body {
-  height: 100%;
-}
-
-body {
-  background-color: #FDFDFD;
-  font-size: 13px;
-}
-
-/*
- HEADER
-*/
-header {
-  background-color: #F0F0F0;
-  border-bottom: 1px solid #EEE;
-  color: #111;
-}
+@import 'variables/variables';
+@import 'base/base';
+@import 'components/components';;
+@import 'layout/layout';
+@import 'themes/themes';
+@import 'helpers/helpers';
 
 .content {
   margin-top: 2em;
@@ -29,8 +16,8 @@ header {
 }
 
 .kommandr {
-  background-color: $kommandr-background;
-  border: 1px solid #E1E4E5;
+  background-color: $kommandr-bg;
+  border: 1px solid ;
   border-radius: 4px;
   color: $kommandr-font-color;
   font-family: consolas, "Liberation Mono", courier, monospace;
@@ -48,6 +35,7 @@ header {
   .prompt {
     margin-right: 0.5em;
   }
+
   .completer {
     display: none;;
     position: absolute;
@@ -124,5 +112,3 @@ header {
 .prompt {
   user-select: none;
 }
-.show { display: block !important;}
-.hide { display: none !important;}

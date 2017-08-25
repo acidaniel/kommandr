@@ -1,0 +1,10 @@
+.dark-theme {
+  color: $hacker-theme-color;
+}
+
+.dark-theme {
+  header {
+    background-color: $hacker-theme-header-bg;
+    border-bottom: 1px solid $hacker-theme-header-border;
+  }
+}
